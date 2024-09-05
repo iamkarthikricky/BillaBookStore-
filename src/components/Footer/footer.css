@@ -1,0 +1,98 @@
+.payments-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media screen and (min-width:600px){
+    .payments-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+.play-store-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: 0;
+    margin-top: 25px;
+}
+@media screen and (min-width:1000px) {
+    .play-store-container{
+        flex-direction: row;
+        justify-content: end;
+        align-items: first baseline;
+    }
+}
+
+
+.footer-sub-heading{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+@media screen and (min-width:600px) {
+    .footer-sub-heading{
+        margin-right: 20px;
+    }
+}
+
+
+.payment-partners-ul-list{
+    width: 220px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+
+
+.store-img{
+    width: 100px;
+}
+
+
+.copy-right-container{
+    font-size: 16px;
+    color: #5C6C75;
+}
+.social-icon{
+    padding-left: 7px;
+    padding-top: 3px;
+    height: 35px;
+    width: 35px;
+    border: 1px solid gray;
+    border-radius: 20px 20px;
+}
+
+
+.social-icon:hover{
+    color: green;
+    border-color: green;
+}
+
+
+
+.social-icons-container{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.social-icons-container li{
+    margin: 0px 6px 0px 6px;
+}
+@media screen and (min-width:1000px) {
+    .social-icons-container{
+        justify-content: end;
+        align-items:center;
+    }
+}

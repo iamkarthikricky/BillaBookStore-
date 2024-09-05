@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js';
+
+
+import Home from './components/Home/home.js';
+import Cart from './components/Cart/cart.js';
+
+//import Demo from './components/Demo/demo.js';
+
+import {
+  createBrowserRouter,
+  RouterProvider
+} from 'react-router-dom';
+
+
+const router = createBrowserRouter([
+  {
+    children: [
+      {
+        path: "/",
+        element: <Home />
+      },
+      {
+        path: "/cart",
+        element: <Cart />
+      }
+    ],
+  },
+]);
+
+const App =()=>{
+    return (
+          <div>
+            <RouterProvider router={router}/>
+        </div>
+    )
+  }
 
 export default App;

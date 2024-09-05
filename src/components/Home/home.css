@@ -1,0 +1,25 @@
+.home-main-container{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sub-heading{
+    font-size: 18px;
+    color: #21313c;
+    font-weight: 500;
+}
+
+
+.feature-container{
+    margin:10px 0px 10px 0px;
+}
+.feature-heading{
+    margin: 10px 0px 10px 0px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.feature-para{
+    font-size: 16px;
+}
